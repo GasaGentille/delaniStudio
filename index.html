@@ -6,7 +6,9 @@
             <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
             <link rel="stylesheet" type="text/css" href="css/styles.css">
             <script src="js/jQueryLibrary.js"></script>
-            <script src="js/delani.js"></script> 
+            <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+            <script src="js/delani.js"></script>
+
         
     </head>
     <body>
@@ -91,14 +93,14 @@
                     <form class="contacts" id="form">
                             <div class="row">
                               <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Name...." id="nameInput">
+                                <input type="text" class="form-control" placeholder="Name...." id="nameInput" name="name">
                               </div>
                               <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Email...." id="emailInput">
+                                <input type="email" class="form-control" placeholder="Email...." id="emailInput" name="email">
                               </div>
                             </div>
                             <div class="row">
-                              <textarea type="text" class="form-control" cols="50" rows="10" placeholder="Your message here..." id="textareaInput"></textarea>
+                              <textarea type="text" class="form-control" cols="50" rows="10" placeholder="Your message here..." id="textareaInput" name="messag"></textarea>
                             </div> 
                             <button type="submit" value="submit">submit</button>
                           </form>
