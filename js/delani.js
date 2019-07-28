@@ -43,5 +43,18 @@ $(document).ready(function() {
 
             } );
         });
+
+        var porto = $(".porto");
+        $.each(porto, function(index, element){
+                $(element).mouseover(function(){
+                $(".descript"+index).toggle();
+                $(this).toggle();
+            })
+            $(".descript"+index).mouseout(function(){
+                $(this).toggle();
+                $(element).toggle();
+
+            } );
+        });
         
 });
