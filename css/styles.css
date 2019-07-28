@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette|Great+Vibes|Jacques+Francois+Shadow|Kalam|Open+Sans|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courgette|Great+Vibes|Jacques+Francois+Shadow|Kalam|Open+Sans|Rajdhani|Roboto&display=swap');
+
 .headSection{
     background-image: url('../images/head.jpg');
     text-align: center;
@@ -117,4 +118,6 @@ h2{
     line-height:10px;
 }
 
-
+.col-md-3>p{
+    display:none;
+}
