@@ -5,7 +5,9 @@ $(document).ready(function() {
         var inputData =$("input#nameInput").val();
         var inputEmail=$("input#emailInput").val();
         var textAreaData= $("textarea#textareaInput").val();
-
+        
+        //Form Validation
+        
         $(".error").remove();
         
         if (inputData.length < 1) {
@@ -23,14 +25,15 @@ $(document).ready(function() {
                 if (textAreaData.length < 1) {
                     $('#textareaInput').after('<span class="error">This field is required</span>');
                 }  else {
-            
-                        $("#form")[0].reset();
+
                         alert("Dear " +inputData+" we have received your message and thank you for contacting us.");
+                        $("#form")[0].reset();
                     }
                 }
             }
         });
         
+        //Icons animation
         var icn = $(".icons");
         $.each(icn, function(index, element){
                 $(element).click(function(){
@@ -43,16 +46,16 @@ $(document).ready(function() {
 
             } );
         });
-
+        //portofolio animation
         var porto = $(".porto");
         $.each(porto, function(index, element){
                 $(element).mouseover(function(){
-                $(".descript"+index).toggle();
-                $(this).toggle();
+                $(".descript"+index).css({"opacity":"1", "display":"unset","position":"absolute", "top":"20%","left":"25%","border":"1px","background-color":"rgba(255,255,255,0.555)"});
+                $(this).css({"opacity":"0.4"});
             })
-            $(".descript"+index).mouseout(function(){
-                $(this).toggle();
-                $(element).toggle();
+            $(".descript"+index).mouseleave(function(){
+                $(this).css({"opacity":"0"});
+                $(element).css({"opacity":"1"});
 
             } );
         });
