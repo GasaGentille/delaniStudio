@@ -50,7 +50,7 @@ $(document).ready(function() {
         var porto = $(".porto");
         $.each(porto, function(index, element){
                 $(element).mouseover(function(){
-                $(".descript"+index).css({"opacity":"1", "display":"unset","position":"absolute", "top":"20%","left":"25%","border":"1px","background-color":"rgba(255,255,255,0.555)"});
+                $(".descript"+index).css({"opacity":"1", "display":"unset","position":"absolute", "top":"20%","left":"25%","border":"1px","width":"60%","background-color":"rgba(255,255,255,0.555)"});
                 $(this).css({"opacity":"0.4"});
             })
             $(".descript"+index).mouseleave(function(){
