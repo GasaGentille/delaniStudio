@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette|Great+Vibes|Jacques+Francois+Shadow|Kalam|Open+Sans|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courgette|Great+Vibes|Jacques+Francois+Shadow|Kalam|Open+Sans|Rajdhani|Roboto&display=swap');
 
+body{
+    margin: 10px;
+    
+}
 .headSection{
     background-image: url('../images/head.jpg');
     text-align: center;
@@ -61,10 +65,7 @@ form.contacts input,form.contacts textarea,button{
     color:white;
     
 }
-.social,.footer{
-    text-align: center;
-    padding-top: 30px;
-}
+
 button{
     padding-top: 10px;
 }
@@ -81,12 +82,7 @@ textarea[type="text"]::-webkit-input-placeholder{
     color:white;
 }
 
-body{
-    margin: 10px;
-    /* margin: 0px;
-    padding: 0px;
-    width: 80%; */
-}
+
 h1{
     font-family: 'Rajdhani', sans-serif;
 }
@@ -98,7 +94,7 @@ h1{
      display:none;
  }
 .second-cls{
-    /* border: 1px black solid; */
+  
     height: 150px;
 }
 .description1,.description2,.description3{
@@ -120,4 +116,8 @@ h2{
 
 .col-md-3>p{
     display:none;
+}
+.social,.footer{
+    text-align: center;
+    padding-top: 30px;
 }
